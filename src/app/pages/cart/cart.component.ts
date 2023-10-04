@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BookService } from '../../services/book.service';
 import { Book } from '../../models/book.model';
+import { Component1Component } from '../component1/component1.component';
 
 @Component({
   selector: 'app-cart',
@@ -9,9 +10,13 @@ import { Book } from '../../models/book.model';
 })
 export class CartComponent implements OnInit {
 
+  
+
   public listCartBook: Book[] = [];
   public totalPrice = 0;
   public Math = Math;
+
+  public componente: Component1Component;
 
   constructor(
     private readonly _bookService: BookService
